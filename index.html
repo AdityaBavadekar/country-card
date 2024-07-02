@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- LINKS -->
+     <link rel="stylesheet" href="assets/css/theme.css">
+     <link rel="stylesheet" href="assets/css/main.css">
+     <link
+     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+     rel="stylesheet"
+    />
+
+</head>
+<body>
+
+    <main>
+
+        <div class="content">
+
+
+            <!-- NAVBAR -->
+            <nav class="navbar fixed-top" id="navbar">
+                <div class="container">
+                    <a href="/" class="logo">
+                        <img alt="" alt="logo"/>
+                    </a>
+                    <a href="/" class="logo"><p>Logo</p></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item horizontal-list-item"><a href="#home" class="nav-link">Home</a></li>
+                            <li class="nav-item horizontal-list-item"><a href="#about" class="nav-link">About</a></li>
+                            <li class="nav-item horizontal-list-item"><a href="#contact" class="nav-link">Contact</a></li>
+                            <li class="nav-item horizontal-list-item"><a href="#settings" class="nav-link">Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            
+            <!-- MAIN-CONTENT -->
+             <div class="container">
+                <div class="navbar-spacer"></div>
+                <section id="home">
+                    <div class="container pd18">
+                        <h1 class="text-center giant-text pd18">Country Card</h1>
+                        <div class="text-content inner-contents">
+
+                            <h6 class="op8">Country Card can help you find all of the details about a country! <i>Yes, every bit of information.</i> It has a Wiki for every single country.</h6>
+                            <h6 class="op8 normal">Just enter the country name in the search box and travel through the country and its features.</h6>
+                        </div>          
+                    </div>
+                </section>
+                <section id="search">
+                    <div class="container">
+
+                        <div>
+
+                            <div class="search-box">
+                                <input type="text" name="search-input" id="search-input" class="search" placeholder="Search country" autocomplete="off">
+                                <button type="button"><i class="ri-search-line"></i></button>
+                            </div>
+
+                            <div class="country-results mostly-customized-scrollbar" id="country-results">
+                                <!-- <div class="search-result country-result">
+                                    <div class="scrim">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/383px-Flag_of_India.svg.png" alt="flag" class="country-flag">
+                                    </div>
+                                    <div class="country-text">
+                                        <p class="country-name">India</p>
+                                        <p class="country-code op6">IN</p>
+                                    </div>
+                                </div> -->
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section id="stats">
+                    <div class="row space-evenly">
+                        <div class="col corners18 pd18">
+                            <h2 class="text-center bold nomargin auto-counter op9" data-final-count="0" data-name="countries">0</h2>
+                            <h6 class="text-center normal op6 nomargins">Countries</h6>
+                        </div>
+                        <div class="col corners18 pd18">
+                            <h2 class="text-center bold nomargin auto-counter op9" data-final-count="27">0</h2>
+                            <h6 class="text-center normal op6 nomargins">Languages</h6>
+                        </div>
+                        <div class="col corners18 pd18">
+                            <h2 class="text-center bold nomargin auto-counter op9" data-final-count="7">0</h2>
+                            <h6 class="text-center normal op6 nomargins">Continents</h6>
+                        </div>
+                    </div>
+                </section>
+                <section id="about">
+                    <div class="container">
+                        <h2>About me</h2>
+                        <div class="horizontal-contents inner-contents">
+                            <img src="https://images.pexels.com/photos/556669/pexels-photo-556669.jpeg?auto=compress&cs=tinysrgb&w=200" alt="me" width="200" height="200" class="center pd8">
+                            <div class="img-right-content op8">
+                                <p class="text-center allcaps bold nomargin">I am Aditya Bavadekar</p>
+                                <p>I'm a paragraph. add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                                <p>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact" class="center-section">
+                    <div class="container">
+                        <h2>Contact Info</h2>
+                        <div class="inner-contents">
+                            <div class="center pd8">
+                                <p class="bold nomargin">Phone</p>
+                                <p class="nomargin">
+                                    <a href="tel:91123456789" class="op8">+91-123456789</a>
+                                </p>
+                            </div>
+                            <div class="center pd8">
+                                <p class="bold nomargin">Email</p>
+                                <p class="nomargin">
+                                    <a href="mailto:mail@gmail.com" class="op8">mail@gmail.com</a>
+                                </p>
+                            </div>
+                            <div class="center pd8">
+                                <p class="bold nomargin">Address</p>
+                                <p class="nomargin">
+                                    <a href="https://maps.app.goo.gl/F1TZiGaQYYswTbbw5" class="op8">700 Terry Street,<br>San Francisco,<br>CA 158</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="settings">
+                    <div class="container"></div>
+                </section>
+             </div>
+
+            <!-- FOOTER -->
+             <footer>
+                <div class="container">
+
+                    <div class="justify-content-center">
+                        <h3 class="logo nomargin pd18">Logo</h3>
+                    </div>
+
+                    <div class="justify-content-center">
+                        <ul class="display-flex gap8 center pd18">
+                            <li class="horizontal-list-item">
+                                <a href="https://www.facebook.com" target="_blank" class="social-button facebook"><i class="ri-facebook-line" title="Facebook"></i></a>
+                            </li>
+                            <li class="horizontal-list-item">
+                                <a href="https://www.twitter.com" target="_blank" class="social-button twitter"><i class="ri-twitter-line" title="Twitter"></i></a>
+                            </li>
+                            <li class="horizontal-list-item">
+                                <a href="https://www.linkedin.com" target="_blank" class="social-button linked"><i class="ri-linkedin-line" title="LinkedIn"></i></a>
+                            </li>
+                            <li class="horizontal-list-item">
+                                <a href="https://www.instagram.com" target="_blank" class="social-button instagram"><i class="ri-instagram-line" title="Instagram"></i></a>
+                            </li>
+                            <li class="horizontal-list-item">
+                                <a href="https://www.youTube.com" target="_blank" class="social-button youtube"><i class="ri-youtube-line" title="YouTube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="indent4">
+                            <h6 class="op7">Help</h6>
+                            <ul class="nopadding">
+                                <li class="op6 hover-op1"><a href="#">FAQ</a></li>
+                                <li class="op6 hover-op1"><a href="#">Term &amp; conditions</a></li>
+                                <li class="op6 hover-op1"><a href="#">Reporting</a></li>
+                                <li class="op6 hover-op1"><a href="#">Documentation</a></li>
+                                <li class="op6 hover-op1"><a href="#">Support Policy</a></li>
+                                <li class="op6 hover-op1"><a href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="justify-content-center">
+                        <p class="text-center op5"> © 2024 Copyright, All Right Reserved, Made by <a class="semi-bold coloured-yellow" href="https://github.com/AdityaBavdekar">Aditya Bavadekar</a> ❤️</p>
+                    </div>
+                    <div class="footer-bottom-large-image">
+                        
+                    </div>
+                </div>
+             </footer>
+
+        </div>
+
+    </main>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/navbar_scroll_change.js"></script>
+</body>
+</html>

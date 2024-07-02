@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- LINKS -->
+     <link rel="stylesheet" href="assets/css/theme.css">
+     <link
+     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+     rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/country.css">
+
+</head>
+<body>
+
+    <main>
+
+        <div class="content">
+
+
+            <!-- NAVBAR -->
+            <nav class="navbar fixed-top" id="navbar">
+                <div class="container">
+                    <div class="logo-contents">
+                        <a href="/" class="logo">
+                            <img alt="" alt="logo"/>
+                        </a>
+                        <a href="/" class="logo"><p>Logo</p></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item horizontal-list-item"><a href="#home" class="nav-link">Home</a></li>
+                        </ul>
+                        <div class="icon-buttons">
+                            <div class="theme-toggle-button nav-icon-btn">
+                                <div class="sun-icon hide">
+                                    <i class="ri-sun-line"></i>
+                                </div>
+                                <div class="moon-icon">
+                                    <i class="ri-moon-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <dialog class="loading-dialog" open>
+                <h3>Loading...</h3>
+                <progress></progress>
+            </dialog>
+            
+            <!-- MAIN-CONTENT -->
+             <div class="container">
+                <div class="navbar-spacer"></div>
+                <section id="home">
+                    <div class="container pd18">
+                        <div class="container justify-content-center">
+                            <img src="" alt="country flag" class="country-flag" id="country-flag">
+                        </div>
+
+                        <h1 class="text-center giant-text pd18" id="country-name">Country Name<br>भारत</h1>
+                        <h3 class="text-center op8 nomargin" id="country-code">CN</h3>
+                        <p class="text-center" id="country-official-name">Official Republic of Country<br>भारत गणराज्य</p>
+                        <div class="text-content inner-contents">
+                            <!-- https://restcountries.com/v3.1/alpha/in -->
+                             <!-- https://gdsc.community.dev/aissms-institute-of-information-technology-pune-india/ -->
+                            <p class="op6 normal text-center" id="country-description">Country Card can help you find all of the details about a country! <i>Yes, every bit of information.</i> It has a Wiki for every single country.</p>
+                        </div>          
+                    </div>
+                </section>
+                
+                <section class="location">
+                    <div class="container">
+                        <div class="contents row center loc-container">
+                            <h6 class="col normal text-center op8 pd8 loc-header">Continent : </h6>
+                            <p class="col normal text-center loc-content op9" id="continent">Asia</p>
+                        </div>
+                        <div class="contents row center loc-container">
+                            <h6 class="col normal text-center op8 pd8 loc-header">Latitude : </h6>
+                            <p class="col normal text-center loc-content op9" id="lat">123.438</p>
+                        </div>
+                        <div class="contents row center loc-container">
+                            <h6 class="col normal text-center op8 pd8 loc-header">Longitude : </h6>
+                            <p class="col normal text-center loc-content op9" id="long">456.333</p>
+                        </div>
+                        <div class="contents row center loc-container">
+                            <h6 class="col normal text-center op8 pd8 loc-header">Map : </h6>
+                            <a href="#" class="col normal text-center loc-content op9" id="map-url">View in Google Maps</a>
+                        </div>
+                        <div class="contents row center loc-container">
+                            <h6 class="col normal text-center op8 pd8 loc-header">Timezone : </h6>
+                            <p class="col normal text-center loc-content op9" id="timezone">UTC+05:30</p>
+                        </div>
+                        <div class="contents row center loc-container">
+                            <h6 class="col normal text-center op8 pd8 loc-header">Native Person name : </h6>
+                            <p class="col normal text-center loc-content op9" id="native-person-name">Citizen</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="country-capital">
+                    <div class="container">
+                        <div class="contents row center justify-content-center">
+                            <h4 class="normal op6 pd8 nomargin">Capital :</h4>
+                            <h5 class="text-center bold nomargin auto-counter op9" id="capital">New Delhi</h5>
+                        </div>
+                    </div>
+                </section>
+                <section id="stats">
+                    <div class="row space-evenly">
+                        <div class="col corners18 pd18">
+                            <h2 class="text-center bold nomargin auto-counter op9" id="population-count" data-final-count="0" data-name="countries">0</h2>
+                            <h6 class="text-center normal op6 nomargins">Population</h6>
+                        </div>
+                        <div class="col corners18 pd18">
+                            <h2 class="text-center bold nomargin auto-counter op9" id="languages-count" data-final-count="0">0</h2>
+                            <h6 class="text-center normal op6 nomargins">Languages</h6>
+                        </div>
+                    </div>
+                </section>
+                <section id="phone-dial-codes">
+                    <div class="container row">
+                        <div class="contents row center">
+                            <h4 class="col normal text-center op8 pd8 loc-header">Dial Codes : </h4>
+                            <div class="dial-codes-list" id="dial-codes-list">
+                                <!-- <div class="dial-code">
+                                    <a href="#">
+                                        <p class="dial-code-text" id="code-text">+91</p>
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="borders">
+                    <div class="container row">
+                        <div class="contents row center">
+                            <h4 class="col normal text-center op8 pd8 loc-header">Border Countries : </h4>
+                            <div class="borders-list" id="borders-list">
+                                <!-- <a href="#">
+                                    <div class="border-country">
+                                        <img src="https://flagcdn.com/w320/ca.png" alt="border country flag" class="border-country-img" id="border-country-img">
+                                        <p class="border-country-text" id="border-country-text">Japan</p>
+                                    </div>
+                                </a> -->
+                        </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="currency">
+                    <div class="container">
+                        <h2 class="normal op6 pd8 text-center nomargin nopadding">Currency</h2>
+
+                        <div class="row center justify-content-center">
+                            <h3 class="text-center bold nomargin auto-counter op9" id="currency-name">Indian rupee</h3>
+                            <h3 class="text-center normal op6" style="padding: 0 18px;" id="currency-symbol">₹</h3>
+                        </div>
+                    </div>
+                </section>
+                <section class="about-flag">
+                    <div class="container row">
+                        <img src="" alt="country flag" class="flag-small country-flag op9" id="country-flag">
+                        <div class="right-content pd18 center justify-content-center">
+                            <h6 class="op6 normal" id="flag-description">The flag of India is composed of three equal horizontal bands of saffron, white and green. A navy blue wheel with twenty-four spokes — the Ashoka Chakra — is centered in the white band.
+                            </h6>
+                        </div>
+                    </div>
+                </section>
+             </div>
+
+            <!-- FOOTER -->
+             <footer>
+                <div class="container">
+
+                    <div class="justify-content-center">
+                        <h3 class="logo nomargin pd18">Logo</h3>
+                    </div>
+
+                    <div class="justify-content-center">
+                        <ul class="display-flex gap8 center pd18">
+                            <li class="horizontal-list-item">
+                                <a href="https://www.facebook.com" target="_blank" class="social-button facebook"><i class="ri-facebook-line" title="Facebook"></i></a>
+                            </li>
+                            <li class="horizontal-list-item">
+                                <a href="https://www.twitter.com" target="_blank" class="social-button twitter"><i class="ri-twitter-line" title="Twitter"></i></a>
+                            </li>
+                            <li class="horizontal-list-item">
+                                <a href="https://www.linkedin.com" target="_blank" class="social-button linked"><i class="ri-linkedin-line" title="LinkedIn"></i></a>
+                            </li>
+                            <li class="horizontal-list-item">
+                                <a href="https://www.instagram.com" target="_blank" class="social-button instagram"><i class="ri-instagram-line" title="Instagram"></i></a>
+                            </li>
+                            <li class="horizontal-list-item">
+                                <a href="https://www.youTube.com" target="_blank" class="social-button youtube"><i class="ri-youtube-line" title="YouTube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="indent4">
+                            <h6 class="op7">Help</h6>
+                            <ul class="nopadding">
+                                <li class="op6 hover-op1"><a href="#">FAQ</a></li>
+                                <li class="op6 hover-op1"><a href="#">Term &amp; conditions</a></li>
+                                <li class="op6 hover-op1"><a href="#">Reporting</a></li>
+                                <li class="op6 hover-op1"><a href="#">Documentation</a></li>
+                                <li class="op6 hover-op1"><a href="#">Support Policy</a></li>
+                                <li class="op6 hover-op1"><a href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="justify-content-center">
+                        <p class="text-center op5"> © 2024 Copyright, All Right Reserved, Made by <a class="semi-bold coloured-yellow" href="https://github.com/AdityaBavdekar">Aditya Bavadekar</a> ❤️</p>
+                    </div>
+                    <div class="footer-bottom-large-image">
+                        
+                    </div>
+                </div>
+             </footer>
+
+        </div>
+
+    </main>
+
+
+    <!-- SCRIPTS -->
+     <script src="/assets/js/country.js"></script>
+     <script src="/assets/js/navbar_scroll_change.js"></script>
+     <script src="/assets/js/theme_switcher.js"></script>
+</body>
+</html>

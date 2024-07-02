@@ -1,0 +1,130 @@
+.loc-header {
+    margin: 0;
+    padding: 4px 8px;
+    opacity: 0.6;
+}
+.loc-content {
+    margin: 0;
+    padding: 0;
+}
+
+.flag-small {
+    width: 30%;
+}
+.dial-codes-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+}
+.dial-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: rgba(128, 128, 128, 0.4);
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: box-shadow .45s, background-color .5s;
+}
+.dial-code:hover {
+    background-color: var(--app-opp-base-color);
+    color: var(--app-theme-base-color);
+    border-color: transparent;
+    box-shadow: 0 0 60px rgba(56, 56, 56, 0.8);
+}
+.dial-code:hover .dial-code-text {
+    transform: scale(1.2);
+}
+.dial-code-text {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.borders-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+}
+.border-country {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 1px solid;
+    background-color: var(--app-theme-base-color);
+    border-color: rgba(128, 128, 128, 0.4);
+    align-items: center;
+    box-shadow: none;
+    transition: box-shadow .25s, background-color .5s;
+    padding: 18px 8px;
+    gap: 8px;
+}
+.border-country:hover {
+    background-color: var(--app-secondary-color);
+    color: var(--app-theme-base-color);
+    border-color: var(--app-theme-base-color);
+    box-shadow: 0 0 60px rgba(56, 56, 56, 0.8);
+}
+.border-country-img {
+    display: block;
+    width: 64px;
+    max-height: 64px;
+    aspect-ratio: 1.5;
+}
+.border-country-text {
+    display: block;
+    align-self: center;
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+    transition: color 1s;
+}
+.border-country:hover .border-country-text {
+    transform: scale(1.07);
+}
+
+.country-flag {
+    animation: 2s linear cust1 forwards;
+    animation-timeline: cover;
+}
+
+@keyframes cust1 {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.loading-dialog[open] {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    border: 1px solid gray;
+    border-radius: 8px;
+    color: inherit;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: var(--app-theme-base-color);
+}
+
+/* #country-name {
+    box-shadow: 8px 80px 80px var(--app-hover-color);
+} */

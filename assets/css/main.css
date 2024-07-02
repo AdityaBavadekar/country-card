@@ -1,0 +1,61 @@
+.country-results {
+    display: block;
+    overflow-y: scroll;
+    max-height: 450px;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    background-color: var(--app-emphasis-color);
+    border-radius: 0 0 0 8px;
+}
+.country-result {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+.country-result:hover {
+    background-color: var(--app-primary-color);
+    color: var(--app-theme-base-color);
+}
+.country-flag {
+    --flag-size: 48px;
+    display: block;
+    height: var(--flag-size);
+    aspect-ratio: 1.5;
+}
+.scrim {
+    padding: 8px;
+    /* background-color: antiquewhite; */
+}
+.country-name {
+    display: block;
+    font-weight: bold;
+}
+.country-code {
+    display: block;
+    font-weight: bold;
+    padding-right: 18px;
+}
+.country-text {
+    width: 100%;
+    display: flex;
+    /* background-color: blue; */
+    justify-content: space-between;
+}
+.search-box {
+    width: 100%;
+}
+
+/* .mostly-customized-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: var(--app-scrollbar-bg-internal);
+  border-radius: 8px;
+}
+
+.mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--app-scrollbar-thumb-internal);
+  border-radius: 8px;
+}*/
