@@ -24,10 +24,12 @@
             <!-- NAVBAR -->
             <nav class="navbar fixed-top" id="navbar">
                 <div class="container">
-                    <a href="/" class="logo">
-                        <img alt="" alt="logo"/>
-                    </a>
-                    <a href="/" class="logo"><p>Logo</p></a>
+                    <div class="logo-contents">
+                        <a href="/" class="logo">
+                            <img alt="" alt="logo"/>
+                        </a>
+                        <a href="/" class="logo"><p>Logo</p></a>
+                    </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -38,10 +40,19 @@
                             <li class="nav-item horizontal-list-item"><a href="#contact" class="nav-link">Contact</a></li>
                             <li class="nav-item horizontal-list-item"><a href="#settings" class="nav-link">Settings</a></li>
                         </ul>
+                        <div class="icon-buttons">
+                            <div class="theme-toggle-button nav-icon-btn">
+                                <div class="sun-icon hide">
+                                    <i class="ri-sun-line"></i>
+                                </div>
+                                <div class="moon-icon">
+                                    <i class="ri-moon-line"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
-
             
             <!-- MAIN-CONTENT -->
              <div class="container">
@@ -197,5 +208,6 @@
 
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/navbar_scroll_change.js"></script>
+    <script src="/assets/js/theme_switcher.js"></script>
 </body>
 </html>
