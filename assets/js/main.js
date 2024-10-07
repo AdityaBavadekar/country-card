@@ -8,7 +8,7 @@ runFetch();
 
 function renderCountry(name, code, src){
     const countryElement = `
-        <a href="/country.html?country=${name}" class="search-result-link">
+        <a href="country.html?country=${name}" class="search-result-link">
             <div class="search-result country-result">
                 <div class="scrim">
                     <img src="${src}" alt="flag" class="country-flag" data-img>
